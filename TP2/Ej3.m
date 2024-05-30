@@ -7,8 +7,8 @@ plot(x,y,'*');
 hold on
 plot(x,y_prima,'r*');                     % grafico los puntos con astericos
 grid on                                 % le pongo una grilla al gr?fico
-h=0.000001;
-f=(polyval(y,x+h)-polyval(y,x-h))/2*h                               % h es la distancia entre puntos
+h=0.000001;                            % h es la distancia entre puntos
+f=(polyval(y,x+h)-polyval(y,x-h))/2*h
 n=2;
 e=(1/(2))*(-polyval(y,x))*h;
 hold on

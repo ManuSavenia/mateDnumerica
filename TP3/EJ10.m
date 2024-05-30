@@ -1,0 +1,10 @@
+f= '@(x)e^-((x^2)/2)';
+a=-2;
+b=2;
+h1=1;
+h2=0.5;
+h3=0.25;
+y1=[-2,-1,0,1,2];
+I1=Trapecio(y1,h1);
+I2=Gauss_Legendre(f,4,a,b);
+I3=Simpson(y1,h1)
